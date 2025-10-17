@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Reikna';
+    src: url('Reikna.ttf') format(truetype);
+}
+/* Customização */
+:root {
+    /* Colors */
+    --color-page-background: #EFE5CA;
+    --color-main-button-background: #F8E1A3;
+    --color-button-border: #DA9772 solid 5px;
+    --color-button-border-hard: #924f2b  5px solid;
+    --color-background-border: #DA9772;
+    --color-heading-text: #DA9772;
+    --color-button-text: #DA9772;
+    --color-message-text: #ffffff;
+    
+    /* Fonts */
+    --font-family-main: "Reikna", sans-serif;
+    --font-size-large: clamp(60px,12vw, 150px);
+    --font-size-medium: clamp(12px,32px, 32px);
+    --font-style: normal;
+    --font-weight: 400;
+    --line-height: normal;
+    
+    /*border*/
+    --border-radius: 20px;
+
+    /*Image*/
+    --heigt-image: 350px;
+    --width-image: 300px;
+
+    /* Spacing */
+    --padding-container: 0.62538rem;
+    --gap-button-leftrigt: 40px;
+    --gap-button-topbottom: 16px;
+    --button-size: 159px;
+    --marigin-top: 195px;
+
+  }
+* {
+    margin: 0px; 
+    padding: 0px;
+    font-family: var(--font-family-main);
+  }
+
+
+  body {
+    height: 100vh;
+    width: 100%;
+    color: var(--color-heading-text);
+    font-size: var(--font-size-large);
+    text-align: center;
+    background-color: var(--color-page-background);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    line-height: var(--font-height);
+    padding-top: var(--marigin-top); 
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: var(--font-size-large);
+   
+  }
+
+  button {
+    background-color: var(--color-main-button-background);
+    border: var(--color-button-border);
+    border-radius: var(--border-radius);
+    padding: var(--gap-button-topbottom) var(--gap-button-leftrigt);
+    width: var(--button-size);
+    font-size: var(--font-size-medium);
+    color: var(--color-button-text);
+    
+  }
+  #voltar {
+    border: var(--color-button-border-hard);
+  }
+  p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: var(--font-size-medium);
+    background-color: var(--color-message-text);
+    padding: var(--gap-button-topbottom) var(--gap-button-leftrigt);
+    width: 253px;
+    border: var(--color-button-border);
+    
+  }
+
+  #imagem-personagem {
+    height: var(--heigt-image);
+    width: var(--width-image);
+    margin-bottom: 15px;
+  }
+
+  button:hover {
+      transform: scale(1.2);
+      transition: 0.2s;
+  }
