@@ -33,8 +33,9 @@
     --padding-container: 0.62538rem;
     --gap-button-leftrigt: 40px;
     --gap-button-topbottom: 16px;
-    --button-size: 159px;
+    --button-size: clamp(50px, 159px , 159px) ;
     --marigin-top: 195px;
+    
 
   }
 * {
@@ -71,6 +72,8 @@
     width: var(--button-size);
     font-size: var(--font-size-medium);
     color: var(--color-button-text);
+    margin-bottom: 10px;
+    
     
   }
   #voltar {
