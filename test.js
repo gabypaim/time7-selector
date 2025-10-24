@@ -17,9 +17,6 @@
                 const cabelo = this.getAttribute('data-cabelo');
                 //this = eu, esse botão que cliquei. getAttribute = leia o texto/adesivo. data-cabelo = nome do adesivo personalizado
 
-                aplicarTema(name);
-
-
                 localStorage.setItem('nomeselecionado', name);
                 localStorage.setItem('cabeloselecionado', cabelo);
                 // localStorage é um objeto global que funciona como um pequeno banco de dados para guardar dados no computador do usuário.
